@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+
+.app {
+  background-image: url('cold.png');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.75));
+  padding: 50px;
+}
+
+.app.warm {
+  background-image: url('hot.png');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.search-bar {
+  display: block;
+  font-size: 25px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 75px;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 5px 5px rgba(39, 35, 35, 0.3);
+  border-radius: 40px;
+}
+
+.search-bar:focus {
+  background-color: white;
+}
+
+.date {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: .5px .5px rgb(90, 100, 100);
+}
+
+.city {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 10px auto;
+  text-align: center;
+  text-shadow: .5px .5px rgb(37, 39, 39);
+}
+
+.temp {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  margin: 20px auto 0px;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: .5px .5px rgb(37, 39, 39);
+  border-radius: 40px;
+  padding: 40px 60px;
+  color: black;
+  text-align: center;
+  margin-left: 565px;
+}
+
+.condition {
+  position: relative;
+  display: block;
+  margin: 25px auto 20px;
+  padding: 15px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+}
+
